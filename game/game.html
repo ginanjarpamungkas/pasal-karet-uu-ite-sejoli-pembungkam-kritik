@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="gua.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+</head>
+<body>
+<!-- home-page -->
+<div id="home-page" class="uk-section uk-background-cover uk-background-center-center uk-position-cover" style="background-image:url('foto/01.jpg');">
+    <div class="uk-container uk-container-large uk-text-center">
+        <div class="scene0 uk-light uk-animation-fade">
+            <h1 class="uk-text-large uk-text-center dc-headline" style="font-family: 'Special Elite', cursive;color: black;">APAKAH ANDA SEORANG CHEF?</h1>
+            <h2 class="uk-text-large">
+                <span style="color: black;">Dapatkah kamu menebak jenis-jenis sayur dan bumbu masak?</span>
+            </h2>
+            <button class="uk-button uk-button-default dc-start-btn uk-text-uppercase uk-animation-kenburns" uk-toggle="target:#start-game;" style="color: black;">Mari Memasak</button>
+        </div>
+    </div>
+</div>
+<!-- start game -->
+<div id="start-game" class="uk-light uk-animation-fade" hidden> 
+    <div class="scene1 bala1 uk-container-small uk-text-center" style="margin:0 auto;"> 
+        <p class="choose" style="color: black;">Manakah yang termasuk sayur?</p>
+        <ul class="uk-child-width-1-2 uk-grid-large uk-text-center character-list" uk-grid>
+            <li>
+                <button class="uk-button uk-button-default dc-start-btn" uk-toggle="target:#tomat;">
+                    <h2 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom" style="font-family: 'Special Elite', cursive;text-transform:uppercase;">Tomat</h2>
+                </button>
+            </li>
+            <li>
+                <button class="uk-button uk-button-default dc-start-btn" uk-toggle="target:#timun;">
+                    <h2 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom" style="font-family: 'Special Elite', cursive;text-transform:uppercase;">Timun</h2>
+                </button>
+            </li>
+        </ul>
+        <div style="background-image:url('foto/03.jpg');background-size:cover;background-position:center center;position:absolute;top:0;left:0;width:100vw;height:100vh;z-index:-8;"></div>
+    </div>
+</div>
+<!-- tomat -->
+<div id="tomat" class="uk-light uk-animation-fade" hidden> 
+    <div class="scene1 bala1 uk-container-small uk-text-center" style="margin:0 auto;"> 
+        <p class="choose">Yang membuat kuning warna alamai</p>
+        <ul class="uk-child-width-1-2 uk-grid-large uk-text-center character-list" uk-grid>
+            <li>
+                <button class="uk-button uk-button-default dc-start-btn" uk-toggle="target:#result;animation:uk-animation-fade">
+                    <h2 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom" style="font-family: 'Special Elite', cursive;text-transform:uppercase;">Kunyit</h2>
+                </button>
+            </li>
+            <li>
+                <button class="uk-button uk-button-default dc-start-btn" uk-toggle="target:#jahe1;">
+                    <h2 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom" style="font-family: 'Special Elite', cursive;text-transform:uppercase;">Jahe</h2>
+                </button>
+            </li>
+        </ul>
+        <div style="background-image:url('foto/08.jpg');background-size:cover;background-position:center center;position:absolute;top:0;left:0;width:100vw;height:100vh;z-index:-8;"></div>
+    </div>
+    <div id="identifypolice" class="popmodal uk-flex-top">
+        <div class="">
+            <div class="doyouknow">DID YOU KNOW?</div>
+            <h2 class="uk-modal-title">Ternyata tomat juga bisa dikategorikan sebagai buah lho.</h2>
+            <p class="pop-text">Hal ini karena didalam tomat ada biji yang merupakan ciri2 dari buah</p>
+            <p class="uk-text-center">
+                <button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#identifypolice" type="button">Got it</button>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- timun -->
+<div id="timun" class="uk-light uk-animation-fade" hidden> 
+    <div class="scene1 bala1 uk-container-small uk-text-center" style="margin:0 auto;"> 
+        <p class="choose">Timun merupakan buah yang bisa disayur</p>
+        <ul class="uk-child-width-1-2 uk-grid-large uk-text-center character-list" uk-grid>
+            <li>
+                <button class="uk-button uk-button-default dc-start-btn" uk-toggle="target:#jahe1;animation:uk-animation-fade">
+                    <h2 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom" style="font-family: 'Special Elite', cursive;text-transform:uppercase;">Tomat</h2>
+                </button>
+            </li>
+            <li>
+                <button uk-toggle="target:#jahe2;animation:uk-animation-fade uk-flex-center bala-start">
+                    <h2 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom" style="font-family: 'Special Elite', cursive;text-transform:uppercase;">Timun</h2>
+                </button>
+            </li>
+        </ul>
+        <div style="background-image:url('foto/01.jpg');background-size:cover;background-position:center center;position:absolute;top:0;left:0;width:100vw;height:100vh;z-index:-8;"></div>
+    </div>
+</div>
+<!-- jahe -->
+<div id="jahe1" class="uk-animation-fade" hidden style="background-image:url('foto/04.jpg');background-size:cover;background-position:center center;position:absolute;top:0;left:0;width:100vw;height:100vh;"> 
+    <div class="bracket-wrap" uk-scrollspy="cls:uk-animation-fade; delay: 500">
+        <span class="bracket left"></span>
+        <h3><span>"BANG!"</span> <span>Darimana kamu belajar.</span> <span>Mana ada jahe menghasilkan warna kuning.</span>
+        </h3>
+        <span class="bracket right"></span>
+    </div>
+    <div class="uk-flex uk-flex-center">
+        <div class="uk-card">
+            <button uk-toggle="target:#jahe2;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Cari Kebenaran</button>
+        </div>
+    </div>
+</div>
+
+<div id="jahe2" class="uk-animation-fade uk-light" hidden  style="background-image:url('foto/03.jpg');background-size:cover;background-position:center center;position:absolute;top:0;left:0;width:100vw;height:100vh;"> 
+    <div class="bracket-wrap" uk-scrollspy="cls:uk-animation-fade; delay: 500">
+        <span class="bracket left"></span>
+        <h3>
+            <span>Yang bener itu kunyit</span>
+        </h3>
+        <span class="bracket right"></span>
+    </div>
+    <div class="uk-flex uk-flex-center">
+        <div class="uk-card">
+            <button uk-toggle="target:#result;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Akhiri</button>
+        </div>
+    </div>
+</div>
+<div id="result" class="uk-animation-fade uk-light" hidden  style="background-image:url('foto/07.jpg');background-size:cover;background-position:center center;position:absolute;top:0;left:0;width:100vw;height:100vh;"> 
+    <div class="bracket-wrap" uk-scrollspy="cls:uk-animation-fade; delay: 500">
+        <span class="bracket left"></span>
+        <h3>
+            <span>Kamu bukan seorang chef.</span>
+        </h3>
+        <span class="bracket right"></span>
+    </div>
+    <div class="uk-flex uk-flex-center">
+        <div class="uk-card">
+            <a href="/ite_web/game.html" class="uk-button-primary">Replay</a>
+        </div>
+    </div>
+    <!-- <div class="base-img-bg test-02"></div> -->
+</div>
+<script type="text/javascript">
+    $('.pop-close').on('click', function() {
+            var value = $(this).attr('data-value');
+            //console.log(value)
+            $(value).hide();
+    });
+</script>
+</body>
+</html>

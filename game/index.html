@@ -1,0 +1,1949 @@
+
+<!DOCTYPE html>
+<html lang="en" class="uk-height-1-1 uk-background-cover uk-background-fixed">
+<head>
+<meta charset="utf-8">
+<title>Death in Custody Interactive | Malaysiakini</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta name="theme-color" content="#000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta property="fb:app_id" content="217374841612391">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://pages.malaysiakini.com/deathincustody/interactive/">
+<meta property="og:title" content="【 Enter now 】 Death in Custody Interactive">
+<meta property="og:description" content="Can you protect yourself in police custody? Try this interactive feature">
+<meta property="og:site_name" content="Malaysiakini">
+<meta property="article:author" content="https://www.facebook.com/MalaysiaKini/">
+<meta property="og:image" content="https://pages.malaysiakini.com/deathincustody/img/game-1200x630.png">
+<meta property="article:publisher" content="https://www.facebook.com/MalaysiaKini/">
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+<style>
+			html,body{font-weight:300;}
+			header{z-index:9999;}
+			.uk-logo{font-family:"Special Elite";color:#bbb!important;font-size:18px;font-weight:400;}
+			.uk-text-lead p{font-size:24px;}
+			.uk-navbar-nav a{text-transform:none;}
+			.uk-navbar-nav  a>div>span{font-size:12px;font-weight:300;letter-spacing:1px;}
+			.uk-navbar-nav li.uk-active a>div>span{color:#fc0e1f;font-weight:500;}
+			.uk-subtitle{text-transform:none;}
+			.uk-active .uk-subtitle{color:#ccc;}
+			blockquote{letter-spacing:1px;}
+			.uk-section{padding:40px 0;}
+			.uk-section-secondary em{color:#ccc!important;}
+			.uk-container{padding:0;}
+			.uk-card:hover h3{color:#fc0e1f;}
+			.uk-card-secondary .at4-count-container{border-color:#424242!important;}
+			.uk-card-secondary .at4-count, .uk-card-secondary .at4-title{color:#fff!important}
+			.uk-button-primary{background:#fc0e1f}
+
+
+			html {background-color:#000;}
+		body {
+			width: 100vw;
+			height: 100vh;
+			color: #fff;
+			//background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+			//background: linear-gradient(-45deg, #151b33, rgba(42,54,105,0.75));
+			background-size: 100% 200%;
+			font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+		}
+
+		/* Text */
+		h2.uk-text-large  {color:#fff;font-family:"Special Elite";font-weight: 300;margin:25px auto 0;font-size:20px;}
+		.choose {font-family: 'Special Elite', cursive;color:#e12127;font-weight: 300;margin:0 auto 36px;font-size:24px;background-color:rgba(0,0,0,0.75);display: inline-block;padding:0px 15px;}
+
+		/* Character */
+		ul.character-list li {position: relative;}
+		ul.character-list li>button{border:0px solid #fff;background-color:transparent;text-align: center;display:block;position: relative;margin:0 auto;}
+		ul.character-list li>button h2 {color:#fff;font-weight:700;font-size:24px;}
+		ul.character-list li>button p.age {margin:0px;font-size:16px;color:#000;margin-bottom:45px;}
+		ul.character-list li>button img {width:50%;display:block;margin:20px auto;}
+		ul.character-list li>button p.c-btn {position:relative;width:80px;margin:0px;}
+
+		/* character mobile */
+		ul.characters-mobile-items li {position: relative;}
+		ul.characters-mobile-items li>button{border:0px solid #fff;background-color:#e1d5af;text-align: center;display:block;position: relative;margin:0 auto;}
+		ul.characters-mobile-items li>button h2 {color:#000;font-weight: 500;font-size:24px;}
+		ul.characters-mobile-items li>button p.age {margin:0px;font-size:16px;color:#000;margin-bottom:45px;}
+		ul.characters-mobile-items li>button img {width:50%;display:block;margin:20px auto;}
+		ul.characters-mobile-items li>button p.c-btn {display:inline-block;margin:0 auto;}
+
+		/* Scene Images */
+		.base-img-bg{
+			position: absolute;height:100%;width:100%;z-index:-10;
+			background-size:cover;background-position: center center;top:0;left:0;
+		}
+		.splats {background-image:url('https://pages.malaysiakini.com/deathincustody/img/splat-maroon.svg');background-position: right center;background-repeat: no-repeat;}
+		.test-01 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/door.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-02 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/handcuff.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-03 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/police.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-05 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/arrest.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-06 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/standdoor.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-07 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/blood.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-08 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/courts.jpg') !important;z-index:-9;opacity:1 !important;}
+
+		.jail-01{z-index:-9;opacity:1 !important;}
+
+		.bala-02 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/policestation.jpg') !important;z-index:-9;opacity:1 !important;}
+		.bala-05 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/beatup.jpg') !important;z-index:-9;opacity:1 !important;}
+		.bala-05b {background-image:url('https://pages.malaysiakini.com/deathincustody/img/slap.jpg') !important;z-index:-9;opacity:1 !important;background-position: left center !important;}
+		.bala-05c {background-image:url('https://pages.malaysiakini.com/deathincustody/img/policestation2.jpg') !important;z-index:-9;opacity:1 !important;background-position: left center !important;}
+		.bala-06 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/doctor.jpg') !important;z-index:-9;opacity:1 !important;}
+		.bala-07 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/dying.jpg') !important;z-index:-9;opacity:1 !important;}
+		.bala-08 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/foot.jpg') !important;z-index:-9;opacity:1 !important;background-position:right center !important;}
+
+		/* Social Media */
+		.share-wrap {text-align: center;margin-top:50px;}
+		.share-wrap p {margin-bottom:10px;}
+		.share-wrap a{display:inline-block;padding:8px;text-align:center;border:1px solid #fff;}
+		.share-wrap a img {width:24px;height:24px;}
+		.share-wrap a.fb-btn {margin-right:10px;}
+		.share-wrap a.tw-btn {margin-right:10px;}
+		.share-wrap a.fb-btn:hover, .share-wrap a.fb-btn:active {background:#3b579d;border:1px solid #3b579d;}
+		.share-wrap a.tw-btn:hover, .share-wrap a.tw-btn:active {background:#1da1f2;border:1px solid #1da1f2;}
+		.share-wrap a.ws-btn:hover, .share-wrap a.ws-btn:active {background:#1bd741;border:1px solid #1bd741;}
+
+		.related-news {text-align:center;}
+		.related-news>p{margin-bottom:0px;}
+		.related-news a {position: relative;padding: 20px;margin-top: 35px;border: 2px solid #fff;display: inline-block;width: 77%;color: #fff;}
+		.related-news a img, .related-news a span {display:inline-block;}
+		.related-news a span{line-height:30px;font-size:24px;font-weight: 500;color:#fff;}
+		.related-news a img {position: relative;top:-40px;}
+
+		.sources {padding:20px;}
+		.sources p {margin-bottom:0px;}
+		.sources a {color:red;}
+
+		.credits p {margin-bottom:0px;font-size:11px;}
+		.credits {padding:20px 20px 0;}
+
+		.find-play a{display: inline-block;margin: 0 auto;text-align: center;font-weight: 500;background-color: #fff;color: #000;padding: 8px 16px;}
+		.find-play a.findmore {background-color:red;color:#fff;}
+
+		/* Footer */
+		footer {
+			background-image:url(https://pages.malaysiakini.com/deathincustody/img/barbtm.png);position:absolute;bottom:0;width:100%;background-repeat:no-repeat;background-position: center top;left:0;
+		}
+
+		/* Scene Bracket */
+		.bracket-wrap{text-align: center;overflow:visible;width: auto;display:flex;align-items:center;margin:0 auto;max-width:600px;}
+		.bracket.left {-webkit-transform:matrix(1, 0, 0, 1, 0, 0);transform:matrix(1, 0, 0, 1, 0, 0);height:200px;width:15px;display:none;
+			vertical-align: top;border-top:1px solid #fff;border-bottom:1px solid #fff;border-left:1px solid #fff;}
+		.bracket.right {-webkit-transform:matrix(-1, 0, 0, 1, 0, 0);transform:matrix(-1, 0, 0, 1, 0, 0);height:200px;width:15px;display:none;
+			vertical-align: top;border-top:1px solid #fff;border-bottom:1px solid #fff;border-left:1px solid #fff;}
+		.bracket-wrap h3{-webkit-transform:matrix(1, 0, 0, 1, 0, 0);transform:matrix(1, 0, 0, 1, 0, 0);font-size:36px;position:relative;display:inline-block;margin:20px;}
+
+		/* Line break */
+		.hrbreak {height:1px;background:#fff;width:120px;margin:30px auto;position: relative;}
+		.hrbreak:after {content:'';position: absolute;height:6px;width:6px;background:#fff;border-radius: 50%;-webkit-border-radius:50%;right:0px;top:-2px;}
+
+		/* Question title */
+		.dc-title-act {font-size:20px;color:#f71212;font-weight:500;line-height: normal;margin:0 0 20px;letter-spacing: 1.5px;position: relative;}
+
+		/* Buttons */
+		.dc-btn {font-size:20px;background-color:transparent;background-image:url('https://pages.malaysiakini.com/deathincustody/img/button-bg.svg');background-position: center center;
+			background-repeat:repeat-x;border-radius:0px;color:#fff;font-weight:300;padding:17px 30px;border:0px;cursor: pointer;}
+		.dc-btn:hover, .dc-btn:focus {background-image:url('https://pages.malaysiakini.com/deathincustody/img/button-bg-hover.svg');text-decoration: none;color:#5c3a23;}
+		/* Buttons Yes & No */
+		.dc-btn-yn {background-size:cover;background-repeat:no-repeat;}
+		/* Buttons Landing Page */
+		.dc-start-btn {
+			font-size:13px;color:#fff !important;letter-spacing: 3px;font-weight:400;opacity:1;transition:all ease-in-out 300ms;border:0px;position:relative;z-index:2;line-height: normal;padding:15px;margin:60px 0 0;
+			-web-transform: rotate(-0.5deg);transform: rotate(-0.5deg);
+		}
+		.dc-start-btn:hover {
+			color:#bf181d !important;-web-transform: rotate(-1.5deg);transform: rotate(-1.5deg);
+		}
+		.dc-start-btn:before{
+			content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:0px;top:-5px;overflow:hidden;
+			background-image: url(https://pages.malaysiakini.com/deathincustody/img/topline.png);background-size:contain;background-repeat: no-repeat;
+		}
+		.dc-start-btn:after{
+			content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:0px;bottom:-5px;overflow:hidden;
+			background-image: url(https://pages.malaysiakini.com/deathincustody/img/btmline.png);background-size:contain;background-repeat: no-repeat;
+		}
+
+		.dc-quest {color:hsla(0,0%,100%,.9);-webkit-transition:opacity 1s ease;transition:opacity 1s ease;-webkit-transform:translateZ(10px);transform:translateZ(10px);font-weight: 300;}
+
+		.playagain{text-align: center;margin:20px auto 60px;}
+		.playagain a{display:inline-block;margin:0 auto;text-align: center;font-weight:500;background-color:#fff;color:#000;padding:8px 16px;}
+
+		/* Modal */
+		.popmodal h2{color:#e12127;font-weight: 500;text-align: center;text-transform: uppercase;font-size:24px;}
+		.popmodal .pop-text {color:#fff;text-align: center;letter-spacing: 0.8px;font-weight: 300;}
+		.popmodal {
+			position: absolute;z-index: 9999;width:100%;height:100vh;top:0;left:0;background-color:rgba(0,0,0,0.75);
+		}
+		.popmodal p.uk-text-center {margin:20px auto 0;}
+		.popmodal .doyouknow {display:inline-block;border-bottom:1px solid red;font-style: italic;}
+		.popmodal>div {
+			display: block;position: absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:black;padding:20px;width:75%;border:1px solid red;
+		}
+
+		/* Social Media */
+		#atstbx, .addthis_inline_share_toolbox_14k7 {position:relative;z-index:1009;}
+
+		/* Utility */
+		.uk-container-small{max-width:700px;}
+		hr{border-width:5px;border-color:#000;width:50px;margin:50px auto 0;}
+		.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;}
+
+		.dc-character-box {
+			width:200px;height:200px;border-radius:50%;text-align:center;transition:all ease-in-out 300ms;border:1px solid #fff;
+		}
+		.dc-character-box:hover {
+			border:1px solid rgba(43,255,217,0.95);
+		}
+		.dc-character-box>div {
+			position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+		}
+		.dc-character-box>div>p {#f00808
+			margin:0;font-size:16px;
+		}
+
+
+		@media only screen and (min-width: 980px) {
+
+			/* FLoat */
+			.avatar {
+				position: fixed;
+				bottom:30px;right:30px;
+				width: 55px;
+				height: 55px;
+				box-sizing: border-box;
+				overflow: hidden;
+				transform: translatey(0px);
+				animation: float 1.5s ease-in-out infinite;
+				img { width: 100%; height: auto; }
+			}
+			/* Final Scene */
+			.final-scene {width:auto;height:auto;}
+			.final-scene .dc-small-title, .final-scene #atstbx table{position:fixed;}
+			.scene12 {padding-bottom:100px;}
+			.scene12 .scene12-title {font-weight:300;font-size:40px;letter-spacing: 0.01em;color:#fff;line-height: 1.28;margin-top:100px;}
+			.scene12 .scene12-title span {font-weight:700;}
+			.longbreak {width:1px;background-color:rgba(255, 255, 255, 0.3) !important;height:320px;position: relative;margin:30px auto;}
+
+			/* Social Media */
+			#atstbx table {position: absolute;right:30px;}
+			#atstbx table span, .at4-title{color:#fff !important;}
+
+			/* Text */
+			p.uk-text-large {font-size:20px}
+			p.uk-text-large.dc-quest {margin:0 0 40px;font-size:36px}
+			h2.uk-text-large span {display:inline-block;padding:0px 8px;}
+
+			/* Bracket */
+			.bracket-wrap h3 span {display:block;text-align:left;margin-bottom:10px;}
+			.exclamation{color:#f71212 !important;text-decoration: none;}
+			.exclamation:after {
+				content: '?';background:#f71212;color:#fff;width: 16px;height: 16px;display: inline-block;border-radius: 50%;font-size: 12px;line-height: 16px;position: relative;top: -5px;left: 5px;text-align: center;
+			}
+			.exclamation.leave {color:#fff !important;}
+			.exclamation.leave:after {
+				content: '?';background:#f71212;color:#fff;width: 16px;height: 16px;display: inline-block;border-radius: 50%;font-size: 12px;line-height: 16px;position: relative;top: -15px;left: 5px;text-align: center;
+			}
+
+			/* Logo */
+			.dc-headline {
+				z-index:1;position: relative;font-size:100px;font-weight: 400;line-height: 1;margin-bottom:0px;color:#d80303 !important;
+			}
+			/*.dc-headline:after {
+				content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:-30px;bottom:5px;overflow:hidden;
+				background-image: url(https://pages.malaysiakini.com/deathincustody/interactive/img/line.png);background-size:contain;background-repeat: no-repeat;
+			}*/
+			/* Small Logo */
+			.dc-small-title {z-index:1;position:absolute;font-size:36px;font-weight: 900;line-height: 1;margin-bottom:0px;color:#d80303;top:30px;left:30px;font-family: 'Special Elite', cursive;}
+			.dc-small-title:after {
+				content:'';position:absolute;width:100%;max-width:90%;z-index:-1;height:10px;left:0;right:0;bottom:-10px;overflow:hidden;
+				background-image: url(https://pages.malaysiakini.com/deathincustody/img/line.png);background-size:contain;background-repeat: no-repeat;
+			}
+		}
+
+		@media only screen and (max-width: 979px) {
+			/* Social Media */
+			#atstbx table {display:none}
+
+			/* FLoat */
+			.avatar {
+				position: fixed;
+				bottom:60px;right:30px;
+				width: 55px;
+				height: 55px;
+				box-sizing: border-box;
+				overflow: hidden;
+				transform: translatey(0px);
+				animation: float 6s ease-in-out infinite;
+				img { width: 100%; height: auto; }
+			}
+
+			/* Final Scene */
+			.final-scene {width:auto;height:auto;}
+			.final-scene .dc-small-title, .final-scene #atstbx table{position:relative;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+			.scene12 {padding-bottom:100px;}
+			.scene12 .scene12-title {font-weight:300;font-size:26px;letter-spacing: 0.01em;color:#fff;line-height: 1.28;margin-top:100px;}
+			.scene12 .scene12-title span {font-weight:700;}
+			.longbreak {width:1px;background-color:rgba(255, 255, 255, 0.3) !important;height:320px;position: relative;margin:30px auto;}
+
+			/* Text */
+			p.uk-text-large {font-size:20px}
+			p.uk-text-large.dc-quest {margin:0 0 40px;font-size:24px}
+			h2.uk-text-large span {display:inline;padding-right:5px;}
+			h2.uk-text-large {padding:0px 20px;}
+			.choose {font-family: 'Special Elite', cursive;color:#e12127;font-weight: 300;margin:0 auto 36px;font-size:24px;background-color:rgba(0,0,0,0.75);}
+
+			/* Bracket Wrap */
+			.bracket-wrap h3 {font-size:24px;text-align:left;}
+			.bracket-wrap h3 span {display:block;margin-bottom:15px;text-align:left;}
+			.bracket-wrap h3 a {display:block;text-decoration: underline;margin-bottom:15px;}
+			.exclamation{color:#f71212 !important;text-decoration: none;}
+			.exclamation.leave {color:#fff !important;}
+			.exclamation:after {letter-spacing: 0px;
+				content: '?';background:#f71212;color:#fff;width: 16px;height: 16px;display: inline-block;border-radius: 50%;font-size: 12px;line-height: 16px;position: relative;top: -5px;left: 5px;text-align: center;
+			}
+
+			/*  Buttons */
+			.dc-btn-yn {padding:15px 30px;}
+
+			/* Logo */
+			.dc-headline {
+				z-index:1;position: relative;font-size:64px;font-weight: 900;line-height: 1;margin-bottom:0px;color:#d80303 !important;margin:0 0 10px;
+			}
+			/*.dc-headline:after {
+				content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:0px;right:0px;bottom:-10px;overflow:hidden;
+				background-image: url(../interactive/img/topline.png);background-size:contain;background-repeat: no-repeat;background-position: center center;
+			}*/
+			/* Logo Small */
+			.dc-small-title {z-index:1;position:absolute;display:inline-block;font-size:26px;font-weight: 900;line-height: 1;font-family: 'Special Elite', cursive;
+				margin-bottom:0px;color:#d80303;text-align:center;right:0;left:0;top:30px;
+			}
+			.dc-small-title:after {
+				content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:0;right:0;bottom:-10px;overflow:hidden;
+				background-image: url(https://pages.malaysiakini.com/deathincustody/img/topline.png);background-size:contain;background-repeat: no-repeat;background-position: center center;
+			}
+			 /* Utility */
+			.dc-margin-s {margin-top:10px !important;}
+		}
+		@media only screen and (max-width: 380px) {
+			/* Logo */
+			.dc-headline {
+				font-size:54px;
+			}
+			/*.dc-headline:after {
+				height:10px;
+			}*/
+			/* Small Logo */
+			.dc-small-title {font-size:44px}
+			.dc-btn {padding:15px;}
+		}
+
+
+
+
+		/* Float Animation */
+		@keyframes float {
+			0% {
+				transform: translatey(0px);
+			}
+			50% {
+				transform: translatey(-20px);
+			}
+			100% {
+				transform: translatey(0px);
+			}
+		}
+
+
+		/* Pulse animation */
+		.animated {
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+
+		.animated.infinite {
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+		}
+
+		@-webkit-keyframes pulse {
+			from {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+
+			50% {
+				-webkit-transform: scale3d(1.05, 1.05, 1.05);
+				transform: scale3d(1.05, 1.05, 1.05);
+			}
+
+			to {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+		}
+
+		@keyframes pulse {
+			from {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+
+			50% {
+				-webkit-transform: scale3d(1.05, 1.05, 1.05);
+				transform: scale3d(1.05, 1.05, 1.05);
+			}
+
+			to {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+		}
+
+		.pulse {
+			-webkit-animation-name: pulse;
+			animation-name: pulse;
+		}
+
+		@-webkit-keyframes rubberBand {
+			from {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+
+			30% {
+				-webkit-transform: scale3d(1.25, 0.75, 1);
+				transform: scale3d(1.25, 0.75, 1);
+			}
+
+			40% {
+				-webkit-transform: scale3d(0.75, 1.25, 1);
+				transform: scale3d(0.75, 1.25, 1);
+			}
+
+			50% {
+				-webkit-transform: scale3d(1.15, 0.85, 1);
+				transform: scale3d(1.15, 0.85, 1);
+			}
+
+			65% {
+				-webkit-transform: scale3d(0.95, 1.05, 1);
+				transform: scale3d(0.95, 1.05, 1);
+			}
+
+			75% {
+				-webkit-transform: scale3d(1.05, 0.95, 1);
+				transform: scale3d(1.05, 0.95, 1);
+			}
+
+			to {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+		}
+
+
+
+
+		/* Background Homepage */
+		.cb-slideshow {list-style:none;z-index:-10 !important;}
+		.cb-slideshow,
+		.cb-slideshow:after {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				left: 0px;
+				z-index: 0;
+		}
+		.cb-slideshow:after {
+				content: '';
+				background: transparent url(https://pages.malaysiakini.com/deathincustody/img/dotz.png) repeat top left;
+		}
+		.cb-slideshow li span {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				color: transparent;
+				background-size: cover;
+				background-position: 50% 50%;
+				background-repeat: none;
+				opacity: 0;
+				z-index: 0;
+			-webkit-backface-visibility: hidden;
+				-webkit-animation: imageAnimation 36s linear infinite 0s;
+				-moz-animation: imageAnimation 36s linear infinite 0s;
+				-o-animation: imageAnimation 36s linear infinite 0s;
+				-ms-animation: imageAnimation 36s linear infinite 0s;
+				animation: imageAnimation 36s linear infinite 0s;
+		}
+		.cb-slideshow li div {
+				z-index: 1000;
+				position: absolute;
+				bottom: 10px;
+				left: 0px;
+				width: 100%;
+				text-align: right;
+				opacity: 0;
+				-webkit-animation: titleAnimation 36s linear infinite 0s;
+				-moz-animation: titleAnimation 36s linear infinite 0s;
+				-o-animation: titleAnimation 36s linear infinite 0s;
+				-ms-animation: titleAnimation 36s linear infinite 0s;
+				animation: titleAnimation 36s linear infinite 0s;
+		}
+		.cb-slideshow li div h3 {
+				font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+				font-size: 160px;
+				padding: 0 30px;
+				line-height: 120px;
+				color: rgba(169,3,41, 0.8);
+		}
+		.cb-slideshow li:nth-child(1) span { background-image: url('https://pages.malaysiakini.com/deathincustody/img/jail-bg-2.jpg') }
+		.cb-slideshow li:nth-child(2) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/handcuff.jpg');
+				-webkit-animation-delay: 6s;
+				-moz-animation-delay: 6s;
+				-o-animation-delay: 6s;
+				-ms-animation-delay: 6s;
+				animation-delay: 6s;
+		}
+		.cb-slideshow li:nth-child(3) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/blood.jpg');
+				-webkit-animation-delay: 12s;
+				-moz-animation-delay: 12s;
+				-o-animation-delay: 12s;
+				-ms-animation-delay: 12s;
+				animation-delay: 12s;
+		}
+		.cb-slideshow li:nth-child(4) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/foot.jpg');
+				-webkit-animation-delay: 18s;
+				-moz-animation-delay: 18s;
+				-o-animation-delay: 18s;
+				-ms-animation-delay: 18s;
+				animation-delay: 18s;
+		}
+		.cb-slideshow li:nth-child(5) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/police.jpg');
+				-webkit-animation-delay: 24s;
+				-moz-animation-delay: 24s;
+				-o-animation-delay: 24s;
+				-ms-animation-delay: 24s;
+				animation-delay: 24s;
+		}
+		.cb-slideshow li:nth-child(6) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/stand.jpg'nddoor);
+				-webkit-animation-delay: 30s;
+				-moz-animation-delay: 30s;
+				-o-animation-delay: 30s;
+				-ms-animation-delay: 30s;
+				animation-delay: 30s;
+		}
+		.cb-slideshow li:nth-child(2) div {
+				-webkit-animation-delay: 6s;
+				-moz-animation-delay: 6s;
+				-o-animation-delay: 6s;
+				-ms-animation-delay: 6s;
+				animation-delay: 6s;
+		}
+		.cb-slideshow li:nth-child(3) div {
+				-webkit-animation-delay: 12s;
+				-moz-animation-delay: 12s;
+				-o-animation-delay: 12s;
+				-ms-animation-delay: 12s;
+				animation-delay: 12s;
+		}
+		.cb-slideshow li:nth-child(4) div {
+				-webkit-animation-delay: 18s;
+				-moz-animation-delay: 18s;
+				-o-animation-delay: 18s;
+				-ms-animation-delay: 18s;
+				animation-delay: 18s;
+		}
+		.cb-slideshow li:nth-child(5) div {
+				-webkit-animation-delay: 24s;
+				-moz-animation-delay: 24s;
+				-o-animation-delay: 24s;
+				-ms-animation-delay: 24s;
+				animation-delay: 24s;
+		}
+		.cb-slideshow li:nth-child(6) div {
+				-webkit-animation-delay: 30s;
+				-moz-animation-delay: 30s;
+				-o-animation-delay: 30s;
+				-ms-animation-delay: 30s;
+				animation-delay: 30s;
+		}
+		@-webkit-keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					-webkit-animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					-webkit-transform: scale(1.05);
+					-webkit-animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					-webkit-transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					-webkit-transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@-moz-keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					-moz-animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					-moz-transform: scale(1.05);
+					-moz-animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					-moz-transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					-moz-transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@-o-keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					-o-animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					-o-transform: scale(1.05);
+					-o-animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					-o-transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					-o-transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@-ms-keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					-ms-animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					-ms-transform: scale(1.05);
+					-ms-animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					-ms-transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					-ms-transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					transform: scale(1.05);
+					animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@-webkit-keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					-webkit-transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					-webkit-transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					-webkit-transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					-webkit-transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		@-moz-keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					-moz-transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					-moz-transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					-moz-transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					-moz-transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		@-o-keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					-o-transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					-o-transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					-o-transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					-o-transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		@-ms-keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					-ms-transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					-ms-transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					-ms-transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					-ms-transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		@keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		/* Show at least something when animations not supported */
+		.no-cssanimations .cb-slideshow li span{
+			opacity: 1;
+		}
+		@media screen and (max-width: 1140px) {
+			.cb-slideshow li div h3 { font-size: 100px }
+		}
+		@media screen and (max-width: 600px) {
+			.cb-slideshow li div h3 { font-size: 50px }
+		}
+		.mobile-blackcover:before {background-color:hsla(115, 100%, 0%,0.4);content:'';display:block;height:100%;width:100%;position: absolute;}
+		.mobile-blackcover.gamecover:before {background-color:hsla(115, 100%, 0%,0);}
+		.logo>a>img{width:80px;}
+		/* Mobile Devices */
+		@media only screen
+			and (max-device-width: 320px)
+			and (-webkit-min-device-pixel-ratio: 2) {
+				.mobile-blackcover{height:120px;margin:0 auto 35px;}
+				.mobile-headline {font-size:20px;line-height: 1.25}
+				#numbersstart {height:40px;}
+				.uk-navbar-item.logo, .uk-navbar-left>.uk-navbar-item, .uk-navbar-left>.uk-navbar-nav>li>a {height:60px;}
+				.logo>a>img{width:60px;}
+		}
+		@media only screen
+			and (min-device-width: 321px)
+			and (max-device-width: 812px)
+			and (-webkit-min-device-pixel-ratio: 2) {
+				.mobile-blackcover{height:150px ;margin:0 auto 40px;}
+				.mobile-headline {font-size:24px;line-height: 1.25}
+				#numbersstart {height:45px;}
+				.uk-navbar-item.logo, .uk-navbar-left>.uk-navbar-item, .uk-navbar-left>.uk-navbar-nav>li>a {height:60px;}
+				.logo>a>img{width:60px;}
+		}
+		/* Iphone X */
+		@media only screen
+			and (min-device-width: 375px)
+			and (max-device-width: 812px)
+			and (-webkit-min-device-pixel-ratio: 3) {
+				.mobile-blackcover{height:190px ;margin:0 auto 40px;}
+				.mobile-headline {font-size:24px;line-height: 1.25}
+				#numbersstart {height:45px;}
+		}
+
+		</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MBK6KCW');</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111628744-3"></script>
+<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-111628744-3');
+		</script>
+</head>
+<body class="">
+<section class="uk-section uk-margin-large-top">
+<div class="uk-container uk-container-large uk-text-center" style="margin:0 auto;">
+<div class="scene0 uk-light uk-animation-fade">
+<h1 class="uk-text-large uk-text-center dc-headline" style="font-family: 'Special Elite', cursive;">DEATH IN CUSTODY
+<a href="https://pages.malaysiakini.com/deathincustody/interactive/" class="uk-position-cover"></a>
+</h1>
+<h2 class="uk-text-large">
+<span>Can you protect your friend and yourself in police custody?</span>
+</h2>
+<button class="uk-button uk-button-default dc-start-btn uk-text-uppercase uk-animation-kenburns" uk-toggle="target:.scene0;">Start the experience</button>
+<ul class="cb-slideshow scene0">
+<li><span>Scene 01</span><div></div></li>
+<li><span>Scene 02</span><div></div></li>
+<li><span>Scene 03</span><div></div></li>
+<li><span>Scene 04</span><div></div></li>
+<li><span>Scene 05</span><div></div></li>
+<li><span>Scene 06</span><div></div></li>
+</ul>
+</div>
+<div class="scene0 uk-light uk-animation-fade" hidden> 
+
+<div class="scene1 bala1 uk-container-small uk-text-center" style="margin:0 auto;"> 
+<p class="choose">CHOOSE A STORY:</p>
+<ul class="uk-child-width-1-2 uk-grid-large uk-text-center character-list" uk-grid>
+<li>
+<button uk-toggle="target:.scene1;animation:uk-animation-fade">
+<h2 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom" style="font-family: 'Special Elite', cursive;text-transform:uppercase;">The<br />Bloodied<br />Carpet</h2>
+<p class="dc-btn c-btn">Select</p>
+</button>
+</li>
+<li>
+<button uk-toggle="target:.bala1;animation:uk-animation-fade uk-flex-center bala-start">
+<h2 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom" style="font-family: 'Special Elite', cursive;text-transform:uppercase;">The<br />Car<br />Arrest</h2>
+<p class="dc-btn c-btn">Select</p>
+</button>
+</li>
+</ul>
+<div style="background-image:url('https://static03.malaysiakini.com/deathcustody/jail-bg-2.jpg');background-size:cover;background-position:center center;position:absolute;top;0;left:0;width:100vw;top:0;height:100vh;z-index:-8;"></div>
+
+</div>
+</div>
+<div class="scene1 uk-light" hidden> 
+
+<div class="scene2b"> 
+<div class="bracket-wrap" uk-scrollspy="cls:uk-animation-fade; delay: 500">
+<span class="bracket left"></span>
+<h3><span>"BANG!"</span> <span>You wake up, startled.</span> <span>You hear yelling from the room next door.</span>
+<span>What's going on?</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene2b;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Run to housemate's room</button>
+</div>
+</div>
+
+<div class="base-img-bg test-01"></div>
+</div>
+
+<div class="scene3a">
+<div class="scene2b uk-light" hidden> 
+<div class="bracket-wrap" uk-scrollspy="cls:uk-animation-fade; delay: 500">
+<span class="bracket left"></span>
+<h3>
+<span>Four armed masked men are in the room.</span>
+<span>Your housemate crouches on the floor, bleeding.</span>
+<span>One of the men handcuffs him, while another steps on his back.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene3a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Yell, "Stop!"</button>
+</div>
+</div>
+
+<div class="base-img-bg test-02"></div>
+</div>
+</div>
+</div>
+
+
+<div class="scene5a scene5b"> 
+<div class="scene3a uk-light uk-animation-fade" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3><span>The men tell you to stay quiet.</span> <span>"We are the police," they say. "Your housemate is being arrested."</span></h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Demand explanation & ask for identification?</p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene5b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.scene5a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-03"></div>
+
+</div>
+</div>
+
+
+<div class="scene6a scene6b"> 
+<div class="scene5a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>The men drag your housemate to a car outside and drive off.</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Return to your housemate's room?</a></p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene6b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.scene6a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-06"></div>
+
+
+<div id="identifypolice" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<h2 class="uk-modal-title">How to identify plainclothes police</h2>
+<p class="pop-text">If a plainclothes police officer stops you, you may request identification, but be polite.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#identifypolice" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="scene6b scene6a">
+<div class="scene5b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>One man shows you his police authority card and takes your details down.</span>
+<span>The others drag your housemate to a car outside and drive off.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Return to your housemate's room?</a></p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene6b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.scene6a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-06"></div>
+
+
+<div id="identifypoliceb" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<h2 class="uk-modal-title">How to identify plainclothes police</h2>
+<p class="pop-text">If a plainclothes police officer stops you, you may request identification, but be polite.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#identifypoliceb" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="scene7a scene7b"> 
+<div class="scene6a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>One of the cops is back.</span>
+<span>"I need to take away your housemate's motorbike," he says. "Also, can I borrow an old cloth?"</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Give the cop a cloth?</a></p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene7a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.scene7b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-07"></div>
+
+</div>
+</div>
+
+<div class="scene8a scene8b">
+<div class="scene6b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>You notice a bloodstained carpet in your housemate's room.</span>
+<span>Suddenly, one of the cops calls. "Make sure there's no blood left in the room," he says.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Keep the carpet?</a></p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene8a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.scene8b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-07"></div>
+
+</div>
+</div>
+
+
+<div class="scene8a scene8b"> 
+<div class="scene7a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>The cop enters your housemate's room.</span>
+<span>He uses your cloth to clean up traces of blood, then leaves.</span>
+<span>But wait - he forgot a bloodstained carpet...</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Keep the carpet?</a></p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene8a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.scene8b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-07"></div>
+
+</div>
+</div>
+
+<div class="scene8a scene8b">
+<div class="scene7b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>The cop enters your housemate's room.</span>
+<span>He somehow finds a cloth and cleans up traces of blood, then leaves.</span>
+<span>But wait - he forgot a bloodstained carpet...</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Keep the carpet?</a></p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene8a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.scene8b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-07"></div>
+
+</div>
+</div>
+
+
+<div class="scene9a"> 
+<div class="scene8a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>A few hours later, the cops call.</span>
+<span>"Your housemate has died," they say.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene9a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">View result</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-08"></div>
+
+
+<div id="confront" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<h2 class="uk-modal-title">What should you do if you witness police misconduct</h2>
+<p class="pop-text">Avoid confronting the police. If an offence has been committed, you may lodge a police report later.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#confront" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="scene9b">
+<div class="scene8b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>A few hours later, you receive a call from the cops.</span>
+<span>"Your housemate has died," they say.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.scene9b;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">View result</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-08"></div>
+
+
+<div id="confrontb" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<h2 class="uk-modal-title">What should you do if you witness police misconduct</h2>
+<p class="pop-text">Avoid confronting the police. If an offence has been committed, you may lodge a police report later.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#confrontb" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="">
+<div class="scene9a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3 style="font-size:16px;">
+<span style="font-size:30px;font-weight:bold;line-height:1.28">Well done.</span>
+<span>The bloodstained carpet you kept was later produced in court as evidence for your housemate's death in custody.</span>
+<span>You also learnt that you can ask police for ID, and to lodge a report if you witness police misconduct.</span>
+<span>This interactive feature was based on the real-life case of Azlan Syed Mohamed Nur, who died on Nov 3, 2014.</span>
+
+<div class="uk-margin find-play">
+<a class="findmore" href="https://pages.malaysiakini.com/deathincustody/story/azlan.php">Read Azlan's story</a>
+<a href="/deathincustody/interactive/">Play again</a>
+</div>
+
+</h3>
+<span class="bracket right"></span>
+</div>
+
+<div class="share-wrap" style="margin-top:0 !important;">
+<p class="uk-light">Share this story</p>
+<a class="fb-btn" href="https://www.facebook.com/sharer.php?u=https://pages.malaysiakini.com/deathincustody/story/azlan.php?utm_source=sharing&utm_campaign=manual" rel="noopener" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-fb.svg" alt="Facebook">
+</a>
+<a class="tw-btn" href="https://twitter.com/intent/tweet?url=https://pages.malaysiakini.com/deathincustody/story/azlan.php?utm_source=sharing&utm_campaign=manual&text=【 Death in Custody 】 Bala's Story&via=malaysiakini">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-tw.svg" alt="Facebook">
+</a>
+<a class="ws-btn uk-hidden@s" href="whatsapp://send?text=【 Death in Custody 】 Bala's Story https://pages.malaysiakini.com/deathincustody/story/azlan.php?utm_source=sharing&utm_campaign=manual">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-ws.svg" alt="Whatsapp">
+</a>
+</div>
+
+<div class="base-img-bg jail-01"></div>
+
+</div>
+</div>
+
+<div class="">
+<div class="scene9b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3 style="font-size:16px;">
+<span style="font-size:30px;font-weight:bold;line-height:1.25;">You could have done better.</span>
+<span>By throwing away the bloodstained carpet, you have helped cover up a death in custody.</span>
+<span>You also learnt that you can ask police for ID, and to lodge a report if you witness police misconduct.</span>
+<span>This interactive feature was based on the real-life case of Azlan Syed Mohamed Nur, who died on Nov 3, 2014.</span>
+
+<div class="uk-margin find-play">
+<a class="findmore" href="https://pages.malaysiakini.com/deathincustody/story/azlan.php">Read Azlan's story</a>
+<a href="/deathincustody/interactive/">Play again</a>
+</div>
+
+</h3>
+<span class="bracket right"></span>
+</div>
+
+<div class="share-wrap" style="margin-top:0 !important;">
+<p class="uk-light">Share this story</p>
+<a class="fb-btn" href="https://www.facebook.com/sharer.php?u=https://pages.malaysiakini.com/deathincustody/story/azlan.php?utm_source=sharing&utm_campaign=manual" rel="noopener" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-fb.svg" alt="Facebook">
+</a>
+<a class="tw-btn" href="https://twitter.com/intent/tweet?url=https://pages.malaysiakini.com/deathincustody/story/azlan.php?utm_source=sharing&utm_campaign=manual&text=【 Death in Custody 】 Bala's Story&via=malaysiakini">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-tw.svg" alt="Facebook">
+</a>
+<a class="ws-btn uk-hidden@s" href="whatsapp://send?text=【 Death in Custody 】 Bala's Story https://pages.malaysiakini.com/deathincustody/story/azlan.php?utm_source=sharing&utm_campaign=manual">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-ws.svg" alt="Whatsapp">
+</a>
+</div>
+
+<div class="base-img-bg jail-01"></div>
+
+</div>
+</div>
+
+<div class="bala1b"> 
+<div class="bala1 uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>You're travelling in a car with a friend.</span>
+<span>Suddenly, the cops stop your car.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala1b;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-03"></div>
+
+</div>
+</div>
+
+<div class="bala2a bala2b"> 
+<div class="bala1b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>"We suspect this is a stolen vehicle," a cop says.</span>
+<span>He orders both of you to come to the police station.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Do you ask if you are under arrest?</p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala2a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.bala2b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-05"></div>
+
+</div>
+</div>
+
+<div class="bala3a bala3b">
+<div class="bala2a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>"Yes, you are under arrest," the cop replies. </span>
+<span>You are a theft suspect, he adds.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Request a phone call?</p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala3a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.bala3b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-02"></div>
+
+
+<div id="undarest" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<p class="pop-text">Police are obliged to inform you of your offence when arresting you.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#undarest" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bala4a">
+<div class="bala2b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>The cops bring you and your friend to the police station.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala4a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-02"></div>
+
+
+<div id="undarestb" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<p class="pop-text">Police are obliged to inform you of your offence when arresting you.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#undarestb" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bala4a"> 
+<div class="bala3a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>You inform your family of your arrest.</span>
+<span>The cops then bring you and your friend to the police station.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala4a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-02"></div>
+
+
+<div id="phonecall" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<p class="pop-text">When arrested, you may request a phone call to inform your family or lawyer.</p>
+<p class="pop-text">This right may be denied if it causes delay and will lead to another crime being committed.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#phonecall" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bala4a">
+<div class="bala3b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>The cops bring you and your friend to the police station.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala4a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-02"></div>
+
+
+<div id="phonecallb" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<p class="pop-text">When arrested, you may request a phone call to inform your family or lawyer.</p>
+<p class="pop-text">This right may be denied if it causes delay and will lead to another crime being committed.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#phonecallb" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bala5a bala5b"> 
+<div class="bala4a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>At the police station, you see your friend being slapped and punched in the chest by interrogators.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Do you try to protect your friend?</p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala5a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.bala5b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-05"></div>
+
+</div>
+</div>
+
+<div class="bala6a">
+<div class="bala5a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>You are slapped and punched too.</span>
+<span>Police then send both of you to district police headquarters.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala6a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-05b"></div>
+
+</div>
+</div>
+
+<div class="bala6a">
+<div class="bala5b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>You decide it's better to co-operate with the probe.</span>
+<span>Later, you and your friend are sent to district police headquarters.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala6a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-05c"></div>
+
+</div>
+</div>
+
+<div class="bala7a"> 
+<div class="bala6a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>One day later, you and your friend appear before a magistrate for remand.</span>
+<span>Your friend vomits blood in court.</span>
+<span>The magistrate refuses to issue a remand for your friend. "Take him to the hospital now," she says.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala7a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-07"></div>
+
+</div>
+</div>
+
+<div class="bala8a bala8b"> 
+<div class="bala7a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>It's your turn to face the magistrate.</span>
+<span>You wonder if you should tell her about the beatings that took place earlier.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Do you tell magistrate about the beatings?</p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala8a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.bala8b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg test-08"></div>
+
+
+<div id="magistrate" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<p class="pop-text">Normally, police may only detain you for up to 24 hours.</p>
+<p class="pop-text">They must then seek remand from a magistrate for an extension.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#magistrate" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bala9a">
+<div class="bala8a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>You receive a short one-day remand. The magistrate orders police to give you medical attention too.</span>
+<span>You are then brought back to the police station.</span>
+<span>To your surprise, your friend who was denied remand is there too.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala9a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-07"></div>
+
+
+<div id="beatings" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<p class="pop-text">If you are mistreated in police custody, you may lodge a complaint with the magistrate during remand hearing.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#beatings" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bala9a">
+<div class="bala8b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>You are remanded for two days.</span>
+<span>You are then brought back to the police station.</span>
+<span>To your surprise, your friend who was denied remand is there too.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala9a;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">Continue</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-07"></div>
+
+
+<div id="beatingsb" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<p class="pop-text">If you are mistreated in police custody, you may lodge a complaint with the magistrate during remand hearing.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#beatingsb" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bala10a bala10b"> 
+<div class="bala9a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>"Aren't you supposed to be in hospital?" you ask your friend.</span>
+<span>Your friend is too weak to answer.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<p class="dc-title-act">Do you insist to police that he should be taken to hospital?</p>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala10a;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">Yes</button>
+</div>
+<div class="uk-card uk-margin-left">
+<button uk-toggle="target:.bala10b;animation:uk-animation-fade" class="dc-btn dc-btn-yn uk-card uk-card-default uk-card-body uk-padding-small">No</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-06"></div>
+
+</div>
+</div>
+
+<div class="bala10d">
+<div class="bala10a uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>The cops ignore you.</span>
+<span>They say your friend is being re-arrested for another crime.</span>
+<span>One day later, your friend dies.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala10d;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">View result</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-08"></div>
+
+</div>
+</div>
+
+<div class="bala10c">
+<div class="bala10b uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3>
+<span>You are transferred to another police lockup.</span>
+<span>One day later, your friend dies.</span>
+</h3>
+<span class="bracket right"></span>
+</div>
+
+
+<div class="uk-flex uk-flex-center">
+<div class="uk-card">
+<button uk-toggle="target:.bala10c;" class="dc-btn uk-card uk-card-default uk-card-body uk-padding-small">View result</button>
+</div>
+</div>
+
+
+<div class="base-img-bg bala-08"></div>
+
+</div>
+</div>
+
+<div class="">
+<div class="bala10c uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3 style="font-size:16px;">
+<span style="font-size:30px;font-weight:bold;line-height:1.28;">Know your rights.</span>
+<span>You may not have been able to save your friend, but you learnt about your rights in police custody.</span>
+<span>These include being informed of your offence upon arrest; requesting a phone call; and being detained for 24 hours maximum.</span>
+<span style="font-size:16px;">This interactive feature was based on the true story of S Balamurugan, who died on Feb 8, 2017.</span>
+
+<div class="uk-margin find-play">
+<a class="findmore" href="https://pages.malaysiakini.com/deathincustody/story/balamurugan.php">Read Bala's story</a>
+<a href="/deathincustody/interactive/">Play again</a>
+</div>
+
+</h3>
+<span class="bracket right"></span>
+</div>
+
+<div class="share-wrap" style="margin-top:0 !important;">
+<p class="uk-light">Share this story</p>
+<a class="fb-btn" href="https://www.facebook.com/sharer.php?u=https://pages.malaysiakini.com/deathincustody/story/balamurugan.php?utm_source=sharing&utm_campaign=manual" rel="noopener" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-fb.svg" alt="Facebook">
+</a>
+<a class="tw-btn" href="https://twitter.com/intent/tweet?url=https://pages.malaysiakini.com/deathincustody/story/balamurugan.php?utm_source=sharing&utm_campaign=manual&text=【 Death in Custody 】 Bala's Story&via=malaysiakini">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-tw.svg" alt="Facebook">
+</a>
+<a class="ws-btn uk-hidden@s" href="whatsapp://send?text=【 Death in Custody 】 Bala's Story https://pages.malaysiakini.com/deathincustody/story/balamurugan.php?utm_source=sharing&utm_campaign=manual">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-ws.svg" alt="Whatsapp">
+</a>
+</div>
+
+<div class="base-img-bg jail-01"></div>
+
+</div>
+</div>
+
+<div class="">
+<div class="bala10d uk-light" hidden> 
+
+<div class="bracket-wrap">
+<span class="bracket left"></span>
+<h3 style="font-size:16px;">
+<span style="font-size:30px;font-weight:bold;line-height:1.28;">Know your rights.</span>
+<span>You may not have been able to save your friend, but you learnt about your rights in police custody.</span>
+<span>These include being informed of your offence upon arrest; requesting a phone call; and being detained for 24 hours maximum.</span>
+<span style="font-size:16px;">This interactive feature was based on the true story of S Balamurugan, who died on Feb 8, 2017.</span>
+
+<div class="uk-margin find-play">
+<a class="findmore" href="https://pages.malaysiakini.com/deathincustody/story/balamurugan.php">Read Bala's story</a>
+<a href="/deathincustody/interactive/">Play again</a>
+</div>
+
+</h3>
+<span class="bracket right"></span>
+</div>
+
+<div class="share-wrap" style="margin-top:0 !important;">
+<p class="uk-light">Share this story</p>
+<a class="fb-btn" href="https://www.facebook.com/sharer.php?u=https://pages.malaysiakini.com/deathincustody/story/balamurugan.php?utm_source=sharing&utm_campaign=manual" rel="noopener" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-fb.svg" alt="Facebook">
+</a>
+<a class="tw-btn" href="https://twitter.com/intent/tweet?url=https://pages.malaysiakini.com/deathincustody/story/balamurugan.php?utm_source=sharing&utm_campaign=manual&text=【 Death in Custody 】 Bala's Story&via=malaysiakini">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-tw.svg" alt="Facebook">
+</a>
+<a class="ws-btn uk-hidden@s" href="whatsapp://send?text=【 Death in Custody 】 Bala's Story https://pages.malaysiakini.com/deathincustody/story/balamurugan.php?utm_source=sharing&utm_campaign=manual">
+<img src="https://static03.malaysiakini.com/deathcustody/icon-ws.svg" alt="Whatsapp">
+</a>
+</div>
+
+<div class="base-img-bg jail-01"></div>
+
+
+<div id="rearrest" class="popmodal uk-flex-top">
+<div class="">
+<div class="doyouknow">
+DID YOU KNOW?
+</div>
+<p class="pop-text">There have been instances when a detainee is rearrested for a different reason after police fail to secure remand.</p>
+<p class="pop-text">This resets the 24-hour rule, allowing a new remand to be sought. Human rights lawyers describe this "chain remand" as a procedural abuse.</p>
+<p class="uk-text-center">
+<button class="uk-button uk-button-default uk-modal-close dc-btn pop-close" data-value="#rearrest" type="button">Got it</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+					$('.pop-close').on('click', function() {
+							var value = $(this).attr('data-value');
+							//console.log(value)
+							$(value).hide();
+					});
+				</script>
+</div>
+</section>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59db45bf7ee5f0c1"></script>
+</body>
+</html>

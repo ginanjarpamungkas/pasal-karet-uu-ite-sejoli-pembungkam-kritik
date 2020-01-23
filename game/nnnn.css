@@ -1,0 +1,802 @@
+
+			html,body{font-weight:300;}
+			header{z-index:9999;}
+			.uk-logo{font-family:"Special Elite";color:#bbb!important;font-size:18px;font-weight:400;}
+			.uk-text-lead p{font-size:24px;}
+			.uk-navbar-nav a{text-transform:none;}
+			.uk-navbar-nav  a>div>span{font-size:12px;font-weight:300;letter-spacing:1px;}
+			.uk-navbar-nav li.uk-active a>div>span{color:#fc0e1f;font-weight:500;}
+			.uk-subtitle{text-transform:none;}
+			.uk-active .uk-subtitle{color:#ccc;}
+			blockquote{letter-spacing:1px;}
+			.uk-section{padding:40px 0;}
+			.uk-section-secondary em{color:#ccc!important;}
+			.uk-container{padding:0;}
+			.uk-card:hover h3{color:#fc0e1f;}
+			.uk-card-secondary .at4-count-container{border-color:#424242!important;}
+			.uk-card-secondary .at4-count, .uk-card-secondary .at4-title{color:#fff!important}
+			.uk-button-primary{background:#fc0e1f}
+
+
+			html {background-color:#000;}
+		body {
+			width: 100vw;
+			height: 100vh;
+			color: #fff;
+			background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+			background: linear-gradient(-45deg, #151b33, rgba(42,54,105,0.75));
+			background-size: 100% 200%;
+			font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+		}
+
+		/* Text */
+		h2.uk-text-large  {color:#fff;font-family:"Special Elite";font-weight: 300;margin:25px auto 0;font-size:20px;}
+		.choose {font-family: 'Special Elite', cursive;color:#e12127;font-weight: 300;margin:0 auto 36px;font-size:24px;background-color:rgba(0,0,0,0.75);display: inline-block;padding:0px 15px;}
+
+		/* Character */
+		ul.character-list li {position: relative;}
+		ul.character-list li>button{border:0px solid #fff;background-color:transparent;text-align: center;display:block;position: relative;margin:0 auto;}
+		ul.character-list li>button h2 {color:#fff;font-weight:700;font-size:24px;}
+		ul.character-list li>button p.age {margin:0px;font-size:16px;color:#000;margin-bottom:45px;}
+		ul.character-list li>button img {width:50%;display:block;margin:20px auto;}
+		ul.character-list li>button p.c-btn {position:relative;width:80px;margin:0px;}
+
+		/* character mobile */
+		ul.characters-mobile-items li {position: relative;}
+		ul.characters-mobile-items li>button{border:0px solid #fff;background-color:#e1d5af;text-align: center;display:block;position: relative;margin:0 auto;}
+		ul.characters-mobile-items li>button h2 {color:#000;font-weight: 500;font-size:24px;}
+		ul.characters-mobile-items li>button p.age {margin:0px;font-size:16px;color:#000;margin-bottom:45px;}
+		ul.characters-mobile-items li>button img {width:50%;display:block;margin:20px auto;}
+		ul.characters-mobile-items li>button p.c-btn {display:inline-block;margin:0 auto;}
+
+		/* Scene Images */
+		.base-img-bg{
+			position: absolute;height:100%;width:100%;z-index:-10;
+			background-size:cover;background-position: center center;top:0;left:0;
+		}
+		.splats {background-image:url('https://pages.malaysiakini.com/deathincustody/img/splat-maroon.svg');background-position: right center;background-repeat: no-repeat;}
+		.test-01 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/door.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-02 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/handcuff.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-03 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/police.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-05 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/arrest.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-06 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/standdoor.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-07 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/blood.jpg') !important;z-index:-9;opacity:1 !important;}
+		.test-08 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/courts.jpg') !important;z-index:-9;opacity:1 !important;}
+
+		.jail-01{z-index:-9;opacity:1 !important;}
+
+		.bala-02 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/policestation.jpg') !important;z-index:-9;opacity:1 !important;}
+		.bala-05 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/beatup.jpg') !important;z-index:-9;opacity:1 !important;}
+		.bala-05b {background-image:url('https://pages.malaysiakini.com/deathincustody/img/slap.jpg') !important;z-index:-9;opacity:1 !important;background-position: left center !important;}
+		.bala-05c {background-image:url('https://pages.malaysiakini.com/deathincustody/img/policestation2.jpg') !important;z-index:-9;opacity:1 !important;background-position: left center !important;}
+		.bala-06 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/doctor.jpg') !important;z-index:-9;opacity:1 !important;}
+		.bala-07 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/dying.jpg') !important;z-index:-9;opacity:1 !important;}
+		.bala-08 {background-image:url('https://pages.malaysiakini.com/deathincustody/img/foot.jpg') !important;z-index:-9;opacity:1 !important;background-position:right center !important;}
+
+		/* Social Media */
+		.share-wrap {text-align: center;margin-top:50px;}
+		.share-wrap p {margin-bottom:10px;}
+		.share-wrap a{display:inline-block;padding:8px;text-align:center;border:1px solid #fff;}
+		.share-wrap a img {width:24px;height:24px;}
+		.share-wrap a.fb-btn {margin-right:10px;}
+		.share-wrap a.tw-btn {margin-right:10px;}
+		.share-wrap a.fb-btn:hover, .share-wrap a.fb-btn:active {background:#3b579d;border:1px solid #3b579d;}
+		.share-wrap a.tw-btn:hover, .share-wrap a.tw-btn:active {background:#1da1f2;border:1px solid #1da1f2;}
+		.share-wrap a.ws-btn:hover, .share-wrap a.ws-btn:active {background:#1bd741;border:1px solid #1bd741;}
+
+		.related-news {text-align:center;}
+		.related-news>p{margin-bottom:0px;}
+		.related-news a {position: relative;padding: 20px;margin-top: 35px;border: 2px solid #fff;display: inline-block;width: 77%;color: #fff;}
+		.related-news a img, .related-news a span {display:inline-block;}
+		.related-news a span{line-height:30px;font-size:24px;font-weight: 500;color:#fff;}
+		.related-news a img {position: relative;top:-40px;}
+
+		.sources {padding:20px;}
+		.sources p {margin-bottom:0px;}
+		.sources a {color:red;}
+
+		.credits p {margin-bottom:0px;font-size:11px;}
+		.credits {padding:20px 20px 0;}
+
+		.find-play a{display: inline-block;margin: 0 auto;text-align: center;font-weight: 500;background-color: #fff;color: #000;padding: 8px 16px;}
+		.find-play a.findmore {background-color:red;color:#fff;}
+
+		/* Footer */
+		footer {
+			background-image:url(https://pages.malaysiakini.com/deathincustody/img/barbtm.png);position:absolute;bottom:0;width:100%;background-repeat:no-repeat;background-position: center top;left:0;
+		}
+
+		/* Scene Bracket */
+		.bracket-wrap{text-align: center;overflow:visible;width: auto;display:flex;align-items:center;margin:0 auto;max-width:600px;}
+		.bracket.left {-webkit-transform:matrix(1, 0, 0, 1, 0, 0);transform:matrix(1, 0, 0, 1, 0, 0);height:200px;width:15px;display:none;
+			vertical-align: top;border-top:1px solid #fff;border-bottom:1px solid #fff;border-left:1px solid #fff;}
+		.bracket.right {-webkit-transform:matrix(-1, 0, 0, 1, 0, 0);transform:matrix(-1, 0, 0, 1, 0, 0);height:200px;width:15px;display:none;
+			vertical-align: top;border-top:1px solid #fff;border-bottom:1px solid #fff;border-left:1px solid #fff;}
+		.bracket-wrap h3{-webkit-transform:matrix(1, 0, 0, 1, 0, 0);transform:matrix(1, 0, 0, 1, 0, 0);font-size:36px;position:relative;display:inline-block;margin:20px;}
+
+		/* Line break */
+		.hrbreak {height:1px;background:#fff;width:120px;margin:30px auto;position: relative;}
+		.hrbreak:after {content:'';position: absolute;height:6px;width:6px;background:#fff;border-radius: 50%;-webkit-border-radius:50%;right:0px;top:-2px;}
+
+		/* Question title */
+		.dc-title-act {font-size:20px;color:#f71212;font-weight:500;line-height: normal;margin:0 0 20px;letter-spacing: 1.5px;position: relative;}
+
+		/* Buttons */
+		.dc-btn {font-size:20px;background-color:transparent;background-image:url('https://pages.malaysiakini.com/deathincustody/img/button-bg.svg');background-position: center center;
+			background-repeat:repeat-x;border-radius:0px;color:#fff;font-weight:300;padding:17px 30px;border:0px;cursor: pointer;}
+		.dc-btn:hover, .dc-btn:focus {background-image:url('https://pages.malaysiakini.com/deathincustody/img/button-bg-hover.svg');text-decoration: none;color:#5c3a23;}
+		/* Buttons Yes & No */
+		.dc-btn-yn {background-size:cover;background-repeat:no-repeat;}
+		/* Buttons Landing Page */
+		.dc-start-btn {
+			font-size:13px;color:#fff !important;letter-spacing: 3px;font-weight:400;opacity:1;transition:all ease-in-out 300ms;border:0px;position:relative;z-index:2;line-height: normal;padding:15px;margin:60px 0 0;
+			-web-transform: rotate(-0.5deg);transform: rotate(-0.5deg);
+		}
+		.dc-start-btn:hover {
+			color:#bf181d !important;-web-transform: rotate(-1.5deg);transform: rotate(-1.5deg);
+		}
+		.dc-start-btn:before{
+			content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:0px;top:-5px;overflow:hidden;
+			background-image: url(https://pages.malaysiakini.com/deathincustody/img/topline.png);background-size:contain;background-repeat: no-repeat;
+		}
+		.dc-start-btn:after{
+			content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:0px;bottom:-5px;overflow:hidden;
+			background-image: url(https://pages.malaysiakini.com/deathincustody/img/btmline.png);background-size:contain;background-repeat: no-repeat;
+		}
+
+		.dc-quest {color:hsla(0,0%,100%,.9);-webkit-transition:opacity 1s ease;transition:opacity 1s ease;-webkit-transform:translateZ(10px);transform:translateZ(10px);font-weight: 300;}
+
+		.playagain{text-align: center;margin:20px auto 60px;}
+		.playagain a{display:inline-block;margin:0 auto;text-align: center;font-weight:500;background-color:#fff;color:#000;padding:8px 16px;}
+
+		/* Modal */
+		.popmodal h2{color:#e12127;font-weight: 500;text-align: center;text-transform: uppercase;font-size:24px;}
+		.popmodal .pop-text {color:#fff;text-align: center;letter-spacing: 0.8px;font-weight: 300;}
+		.popmodal {
+			position: absolute;z-index: 9999;width:100%;height:100vh;top:0;left:0;background-color:rgba(0,0,0,0.75);
+		}
+		.popmodal p.uk-text-center {margin:20px auto 0;}
+		.popmodal .doyouknow {display:inline-block;border-bottom:1px solid red;font-style: italic;}
+		.popmodal>div {
+			display: block;position: absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:black;padding:20px;width:75%;border:1px solid red;
+		}
+
+		/* Social Media */
+		#atstbx, .addthis_inline_share_toolbox_14k7 {position:relative;z-index:1009;}
+
+		/* Utility */
+		.uk-container-small{max-width:700px;}
+		hr{border-width:5px;border-color:#000;width:50px;margin:50px auto 0;}
+		.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {font-family: BlinkMacSystemFont, -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;}
+
+		.dc-character-box {
+			width:200px;height:200px;border-radius:50%;text-align:center;transition:all ease-in-out 300ms;border:1px solid #fff;
+		}
+		.dc-character-box:hover {
+			border:1px solid rgba(43,255,217,0.95);
+		}
+		.dc-character-box>div {
+			position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+		}
+		.dc-character-box>div>p {#f00808
+			margin:0;font-size:16px;
+		}
+
+
+		@media only screen and (min-width: 980px) {
+
+			/* FLoat */
+			.avatar {
+				position: fixed;
+				bottom:30px;right:30px;
+				width: 55px;
+				height: 55px;
+				box-sizing: border-box;
+				overflow: hidden;
+				transform: translatey(0px);
+				animation: float 1.5s ease-in-out infinite;
+				img { width: 100%; height: auto; }
+			}
+			/* Final Scene */
+			.final-scene {width:auto;height:auto;}
+			.final-scene .dc-small-title, .final-scene #atstbx table{position:fixed;}
+			.scene12 {padding-bottom:100px;}
+			.scene12 .scene12-title {font-weight:300;font-size:40px;letter-spacing: 0.01em;color:#fff;line-height: 1.28;margin-top:100px;}
+			.scene12 .scene12-title span {font-weight:700;}
+			.longbreak {width:1px;background-color:rgba(255, 255, 255, 0.3) !important;height:320px;position: relative;margin:30px auto;}
+
+			/* Social Media */
+			#atstbx table {position: absolute;right:30px;}
+			#atstbx table span, .at4-title{color:#fff !important;}
+
+			/* Text */
+			p.uk-text-large {font-size:20px}
+			p.uk-text-large.dc-quest {margin:0 0 40px;font-size:36px}
+			h2.uk-text-large span {display:inline-block;padding:0px 8px;}
+
+			/* Bracket */
+			.bracket-wrap h3 span {display:block;text-align:left;margin-bottom:10px;}
+			.exclamation{color:#f71212 !important;text-decoration: none;}
+			.exclamation:after {
+				content: '?';background:#f71212;color:#fff;width: 16px;height: 16px;display: inline-block;border-radius: 50%;font-size: 12px;line-height: 16px;position: relative;top: -5px;left: 5px;text-align: center;
+			}
+			.exclamation.leave {color:#fff !important;}
+			.exclamation.leave:after {
+				content: '?';background:#f71212;color:#fff;width: 16px;height: 16px;display: inline-block;border-radius: 50%;font-size: 12px;line-height: 16px;position: relative;top: -15px;left: 5px;text-align: center;
+			}
+
+			/* Logo */
+			.dc-headline {
+				z-index:1;position: relative;font-size:100px;font-weight: 400;line-height: 1;margin-bottom:0px;color:#d80303 !important;
+			}
+			/*.dc-headline:after {
+				content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:-30px;bottom:5px;overflow:hidden;
+				background-image: url(https://pages.malaysiakini.com/deathincustody/interactive/img/line.png);background-size:contain;background-repeat: no-repeat;
+			}*/
+			/* Small Logo */
+			.dc-small-title {z-index:1;position:absolute;font-size:36px;font-weight: 900;line-height: 1;margin-bottom:0px;color:#d80303;top:30px;left:30px;font-family: 'Special Elite', cursive;}
+			.dc-small-title:after {
+				content:'';position:absolute;width:100%;max-width:90%;z-index:-1;height:10px;left:0;right:0;bottom:-10px;overflow:hidden;
+				background-image: url(https://pages.malaysiakini.com/deathincustody/img/line.png);background-size:contain;background-repeat: no-repeat;
+			}
+		}
+
+		@media only screen and (max-width: 979px) {
+			/* Social Media */
+			#atstbx table {display:none}
+
+			/* FLoat */
+			.avatar {
+				position: fixed;
+				bottom:60px;right:30px;
+				width: 55px;
+				height: 55px;
+				box-sizing: border-box;
+				overflow: hidden;
+				transform: translatey(0px);
+				animation: float 6s ease-in-out infinite;
+				img { width: 100%; height: auto; }
+			}
+
+			/* Final Scene */
+			.final-scene {width:auto;height:auto;}
+			.final-scene .dc-small-title, .final-scene #atstbx table{position:relative;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+			.scene12 {padding-bottom:100px;}
+			.scene12 .scene12-title {font-weight:300;font-size:26px;letter-spacing: 0.01em;color:#fff;line-height: 1.28;margin-top:100px;}
+			.scene12 .scene12-title span {font-weight:700;}
+			.longbreak {width:1px;background-color:rgba(255, 255, 255, 0.3) !important;height:320px;position: relative;margin:30px auto;}
+
+			/* Text */
+			p.uk-text-large {font-size:20px}
+			p.uk-text-large.dc-quest {margin:0 0 40px;font-size:24px}
+			h2.uk-text-large span {display:inline;padding-right:5px;}
+			h2.uk-text-large {padding:0px 20px;}
+			.choose {font-family: 'Special Elite', cursive;color:#e12127;font-weight: 300;margin:0 auto 36px;font-size:24px;background-color:rgba(0,0,0,0.75);}
+
+			/* Bracket Wrap */
+			.bracket-wrap h3 {font-size:24px;text-align:left;}
+			.bracket-wrap h3 span {display:block;margin-bottom:15px;text-align:left;}
+			.bracket-wrap h3 a {display:block;text-decoration: underline;margin-bottom:15px;}
+			.exclamation{color:#f71212 !important;text-decoration: none;}
+			.exclamation.leave {color:#fff !important;}
+			.exclamation:after {letter-spacing: 0px;
+				content: '?';background:#f71212;color:#fff;width: 16px;height: 16px;display: inline-block;border-radius: 50%;font-size: 12px;line-height: 16px;position: relative;top: -5px;left: 5px;text-align: center;
+			}
+
+			/*  Buttons */
+			.dc-btn-yn {padding:15px 30px;}
+
+			/* Logo */
+			.dc-headline {
+				z-index:1;position: relative;font-size:64px;font-weight: 900;line-height: 1;margin-bottom:0px;color:#d80303 !important;margin:0 0 10px;
+			}
+			/*.dc-headline:after {
+				content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:0px;right:0px;bottom:-10px;overflow:hidden;
+				background-image: url(../interactive/img/topline.png);background-size:contain;background-repeat: no-repeat;background-position: center center;
+			}*/
+			/* Logo Small */
+			.dc-small-title {z-index:1;position:absolute;display:inline-block;font-size:26px;font-weight: 900;line-height: 1;font-family: 'Special Elite', cursive;
+				margin-bottom:0px;color:#d80303;text-align:center;right:0;left:0;top:30px;
+			}
+			.dc-small-title:after {
+				content:'';position:absolute;width:100%;max-width:100%;z-index:-1;height:10px;left:0;right:0;bottom:-10px;overflow:hidden;
+				background-image: url(https://pages.malaysiakini.com/deathincustody/img/topline.png);background-size:contain;background-repeat: no-repeat;background-position: center center;
+			}
+			 /* Utility */
+			.dc-margin-s {margin-top:10px !important;}
+		}
+		@media only screen and (max-width: 380px) {
+			/* Logo */
+			.dc-headline {
+				font-size:54px;
+			}
+			/*.dc-headline:after {
+				height:10px;
+			}*/
+			/* Small Logo */
+			.dc-small-title {font-size:44px}
+			.dc-btn {padding:15px;}
+		}
+
+
+
+
+		/* Float Animation */
+		@keyframes float {
+			0% {
+				transform: translatey(0px);
+			}
+			50% {
+				transform: translatey(-20px);
+			}
+			100% {
+				transform: translatey(0px);
+			}
+		}
+
+
+		/* Pulse animation */
+		.animated {
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+
+		.animated.infinite {
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+		}
+
+		@-webkit-keyframes pulse {
+			from {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+
+			50% {
+				-webkit-transform: scale3d(1.05, 1.05, 1.05);
+				transform: scale3d(1.05, 1.05, 1.05);
+			}
+
+			to {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+		}
+
+		@keyframes pulse {
+			from {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+
+			50% {
+				-webkit-transform: scale3d(1.05, 1.05, 1.05);
+				transform: scale3d(1.05, 1.05, 1.05);
+			}
+
+			to {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+		}
+
+		.pulse {
+			-webkit-animation-name: pulse;
+			animation-name: pulse;
+		}
+
+		@-webkit-keyframes rubberBand {
+			from {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+
+			30% {
+				-webkit-transform: scale3d(1.25, 0.75, 1);
+				transform: scale3d(1.25, 0.75, 1);
+			}
+
+			40% {
+				-webkit-transform: scale3d(0.75, 1.25, 1);
+				transform: scale3d(0.75, 1.25, 1);
+			}
+
+			50% {
+				-webkit-transform: scale3d(1.15, 0.85, 1);
+				transform: scale3d(1.15, 0.85, 1);
+			}
+
+			65% {
+				-webkit-transform: scale3d(0.95, 1.05, 1);
+				transform: scale3d(0.95, 1.05, 1);
+			}
+
+			75% {
+				-webkit-transform: scale3d(1.05, 0.95, 1);
+				transform: scale3d(1.05, 0.95, 1);
+			}
+
+			to {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+		}
+
+
+
+
+		/* Background Homepage */
+		.cb-slideshow {list-style:none;z-index:-10 !important;}
+		.cb-slideshow,
+		.cb-slideshow:after {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				left: 0px;
+				z-index: 0;
+		}
+		.cb-slideshow:after {
+				content: '';
+				background: transparent url(https://pages.malaysiakini.com/deathincustody/img/dotz.png) repeat top left;
+		}
+		.cb-slideshow li span {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				color: transparent;
+				background-size: cover;
+				background-position: 50% 50%;
+				background-repeat: none;
+				opacity: 0;
+				z-index: 0;
+			-webkit-backface-visibility: hidden;
+				-webkit-animation: imageAnimation 36s linear infinite 0s;
+				-moz-animation: imageAnimation 36s linear infinite 0s;
+				-o-animation: imageAnimation 36s linear infinite 0s;
+				-ms-animation: imageAnimation 36s linear infinite 0s;
+				animation: imageAnimation 36s linear infinite 0s;
+		}
+		.cb-slideshow li div {
+				z-index: 1000;
+				position: absolute;
+				bottom: 10px;
+				left: 0px;
+				width: 100%;
+				text-align: right;
+				opacity: 0;
+				-webkit-animation: titleAnimation 36s linear infinite 0s;
+				-moz-animation: titleAnimation 36s linear infinite 0s;
+				-o-animation: titleAnimation 36s linear infinite 0s;
+				-ms-animation: titleAnimation 36s linear infinite 0s;
+				animation: titleAnimation 36s linear infinite 0s;
+		}
+		.cb-slideshow li div h3 {
+				font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+				font-size: 160px;
+				padding: 0 30px;
+				line-height: 120px;
+				color: rgba(169,3,41, 0.8);
+		}
+		.cb-slideshow li:nth-child(1) span { background-image: url('https://pages.malaysiakini.com/deathincustody/img/jail-bg-2.jpg') }
+		.cb-slideshow li:nth-child(2) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/handcuff.jpg');
+				-webkit-animation-delay: 6s;
+				-moz-animation-delay: 6s;
+				-o-animation-delay: 6s;
+				-ms-animation-delay: 6s;
+				animation-delay: 6s;
+		}
+		.cb-slideshow li:nth-child(3) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/blood.jpg');
+				-webkit-animation-delay: 12s;
+				-moz-animation-delay: 12s;
+				-o-animation-delay: 12s;
+				-ms-animation-delay: 12s;
+				animation-delay: 12s;
+		}
+		.cb-slideshow li:nth-child(4) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/foot.jpg');
+				-webkit-animation-delay: 18s;
+				-moz-animation-delay: 18s;
+				-o-animation-delay: 18s;
+				-ms-animation-delay: 18s;
+				animation-delay: 18s;
+		}
+		.cb-slideshow li:nth-child(5) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/police.jpg');
+				-webkit-animation-delay: 24s;
+				-moz-animation-delay: 24s;
+				-o-animation-delay: 24s;
+				-ms-animation-delay: 24s;
+				animation-delay: 24s;
+		}
+		.cb-slideshow li:nth-child(6) span {
+				background-image: url('https://pages.malaysiakini.com/deathincustody/img/stand.jpg');
+				-webkit-animation-delay: 30s;
+				-moz-animation-delay: 30s;
+				-o-animation-delay: 30s;
+				-ms-animation-delay: 30s;
+				animation-delay: 30s;
+		}
+		.cb-slideshow li:nth-child(2) div {
+				-webkit-animation-delay: 6s;
+				-moz-animation-delay: 6s;
+				-o-animation-delay: 6s;
+				-ms-animation-delay: 6s;
+				animation-delay: 6s;
+		}
+		.cb-slideshow li:nth-child(3) div {
+				-webkit-animation-delay: 12s;
+				-moz-animation-delay: 12s;
+				-o-animation-delay: 12s;
+				-ms-animation-delay: 12s;
+				animation-delay: 12s;
+		}
+		.cb-slideshow li:nth-child(4) div {
+				-webkit-animation-delay: 18s;
+				-moz-animation-delay: 18s;
+				-o-animation-delay: 18s;
+				-ms-animation-delay: 18s;
+				animation-delay: 18s;
+		}
+		.cb-slideshow li:nth-child(5) div {
+				-webkit-animation-delay: 24s;
+				-moz-animation-delay: 24s;
+				-o-animation-delay: 24s;
+				-ms-animation-delay: 24s;
+				animation-delay: 24s;
+		}
+		.cb-slideshow li:nth-child(6) div {
+				-webkit-animation-delay: 30s;
+				-moz-animation-delay: 30s;
+				-o-animation-delay: 30s;
+				-ms-animation-delay: 30s;
+				animation-delay: 30s;
+		}
+		@-webkit-keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					-webkit-animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					-webkit-transform: scale(1.05);
+					-webkit-animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					-webkit-transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					-webkit-transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@-moz-keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					-moz-animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					-moz-transform: scale(1.05);
+					-moz-animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					-moz-transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					-moz-transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@-o-keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					-o-animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					-o-transform: scale(1.05);
+					-o-animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					-o-transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					-o-transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@-ms-keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					-ms-animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					-ms-transform: scale(1.05);
+					-ms-animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					-ms-transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					-ms-transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@keyframes imageAnimation {
+			0% {
+					opacity: 0;
+					animation-timing-function: ease-in;
+			}
+			8% {
+					opacity: 1;
+					transform: scale(1.05);
+					animation-timing-function: ease-out;
+			}
+			17% {
+					opacity: 1;
+					transform: scale(1.1) rotate(3deg);
+			}
+			25% {
+					opacity: 0;
+					transform: scale(1.1) rotate(3deg);
+			}
+			100% { opacity: 0 }
+		}
+		@-webkit-keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					-webkit-transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					-webkit-transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					-webkit-transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					-webkit-transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		@-moz-keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					-moz-transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					-moz-transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					-moz-transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					-moz-transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		@-o-keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					-o-transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					-o-transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					-o-transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					-o-transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		@-ms-keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					-ms-transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					-ms-transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					-ms-transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					-ms-transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		@keyframes titleAnimation {
+			0% {
+					opacity: 0;
+					transform: translateX(200px);
+			}
+			8% {
+					opacity: 1;
+					transform: translateX(0px);
+			}
+			17% {
+					opacity: 1;
+					transform: translateX(0px);
+			}
+			19% {
+					opacity: 0;
+					transform: translateX(-400px);
+			}
+			25% { opacity: 0 }
+			100% { opacity: 0 }
+		}
+		/* Show at least something when animations not supported */
+		.no-cssanimations .cb-slideshow li span{
+			opacity: 1;
+		}
+		@media screen and (max-width: 1140px) {
+			.cb-slideshow li div h3 { font-size: 100px }
+		}
+		@media screen and (max-width: 600px) {
+			.cb-slideshow li div h3 { font-size: 50px }
+		}
+		.mobile-blackcover:before {background-color:hsla(115, 100%, 0%,0.4);content:'';display:block;height:100%;width:100%;position: absolute;}
+		.mobile-blackcover.gamecover:before {background-color:hsla(115, 100%, 0%,0);}
+		.logo>a>img{width:80px;}
+		/* Mobile Devices */
+		@media only screen
+			and (max-device-width: 320px)
+			and (-webkit-min-device-pixel-ratio: 2) {
+				.mobile-blackcover{height:120px;margin:0 auto 35px;}
+				.mobile-headline {font-size:20px;line-height: 1.25}
+				#numbersstart {height:40px;}
+				.uk-navbar-item.logo, .uk-navbar-left>.uk-navbar-item, .uk-navbar-left>.uk-navbar-nav>li>a {height:60px;}
+				.logo>a>img{width:60px;}
+		}
+		@media only screen
+			and (min-device-width: 321px)
+			and (max-device-width: 812px)
+			and (-webkit-min-device-pixel-ratio: 2) {
+				.mobile-blackcover{height:150px ;margin:0 auto 40px;}
+				.mobile-headline {font-size:24px;line-height: 1.25}
+				#numbersstart {height:45px;}
+				.uk-navbar-item.logo, .uk-navbar-left>.uk-navbar-item, .uk-navbar-left>.uk-navbar-nav>li>a {height:60px;}
+				.logo>a>img{width:60px;}
+		}
+		/* Iphone X */
+		@media only screen
+			and (min-device-width: 375px)
+			and (max-device-width: 812px)
+			and (-webkit-min-device-pixel-ratio: 3) {
+				.mobile-blackcover{height:190px ;margin:0 auto 40px;}
+				.mobile-headline {font-size:24px;line-height: 1.25}
+				#numbersstart {height:45px;}
+		}
